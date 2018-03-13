@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .img-wrap {
+      width: 200px;
+      height: 150px;
+      margin: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .img-wrap img {
+      display: block;
+      position: absolute;
+    }
+
+    .img-wrap img.aspectFill-x {
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .img-wrap img.aspectFill-y {
+      height: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  </style>
+</head>
+<script src="js/jquery.js"></script>
+<script src="js/require.js" defer async="true" data-main="js/index.js"></script>
+<body>
+  <section>
+    <div class="img-wrap">
+      <img class="img" src="1.jpg" alt="">
+    </div>
+    <div class="img-wrap">
+      <img class="img" src="1.jpg" alt="">
+    </div>
+    <div class="img-wrap">
+      <img class="img" src="1.jpg" alt="">
+    </div>
+    <div class="img-wrap">
+      <img class="img" src="1.jpg" alt="">
+    </div>
+  </section>
+
+</body>
+
+</html>
